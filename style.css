@@ -3,7 +3,7 @@
 html,body {
     height: 100%;
     width: 100%;
-    font-family: 'Popins', sans-serif; Product Sans;
+    font-family: 'Popins', sans-serif;
     color: #222
 }
 
@@ -225,10 +225,29 @@ figure {
     
 }
 
+.main{
+    display: block;
 
+  width: 100%;
+  height: 120%;
+}
 
-
-
-
-
+.js-dropdown {
+    display: inline-block;
+    max-height: 400px;
+    overflow-y: auto;
+    width: auto;
+  }
+  
+  .x-drop-down__dropped {
+    display: none;
+  }
+  
+  .x-drop-down__dropped.active {
+    display: block;
+  }
+  
+  .item_hide {
+    display: none;
+  }
 
