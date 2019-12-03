@@ -17,6 +17,8 @@ html,body {
 
 .nav-link {
     font-size: 1.1em !important;
+    padding-left: 210px;
+    color: white;
 }
 
 .carousel-inner img {
