@@ -4,6 +4,9 @@ let city,
 
     
 
+
+
+
 $('.ChoiceProf').hide();
 $('.ChoicePrice').hide();
 $('.End').hide();
@@ -51,9 +54,12 @@ $(".x-drop-down__value").click(function(event) {
       }
     });
   }
-  
+                        $('.DaugavpilsProf').hide();
+                        $('.RigaProf').hide();
+                        $('.JelgavaProf').hide();
+                        $('.RezekneProf').hide();
+                        $('.VentspilsProf').hide();
     $('.step1').click(function(){
-    city = $('#city').html();
     if(city == 'Choice City'){
         alert('Choice City');
     }else{
@@ -62,13 +68,32 @@ $(".x-drop-down__value").click(function(event) {
         $('.ChoiceProf').show();
         console.log(city+', step1')
         $('#prof').text('Choice Prof Direction');
+        if(city == 'Daugavpils'){
+            $('.DaugavpilsProf').show()
+            }else{
+            if(city == 'Riga'){
+                $('.RigaProf').show()
+                }else{
+                    if(city == 'Jelgava'){
+                        $('.JelgavaProf').show()
+                        }else{
+                            if(city == 'Rezekne'){
+                                $('.RezekneProf').show()
+                                }else{
+                                    if(city == 'Ventspils'){
+                                        $('.VentspilsProf').show()
+                                    }
+                                    }
+                                }
+                        }
+                }
     }
   });
 
-  let left,
-      right;
 
   $('.step2').click(function(){
+            
+            
       prof = $('#prof').html();
       if(prof == 'Choice Prof Direction'){
         alert('Choice Prof Direction');
@@ -93,8 +118,10 @@ $(".x-drop-down__value").click(function(event) {
   
 
 
+
   $('.step3').click(function(){
-    
+
+               
   
     var price = $( "#polzunok" ).slider( "values", 1 );
 
@@ -105,61 +132,7 @@ $(".x-drop-down__value").click(function(event) {
         $('.End').show();
         console.log(city+', '+prof+', ' +price+', step3')
     }
-    if(city == 'Daugavpils'){
-        if(prof == 'Biology'){
-            let newElement = document.createElement('li');
-            let element = document.getElementById('University');
-            $(newElement).text('Daugavpils university');
-            element.appendChild(newElement);
-        }else{
-            if(prof == 'English and Russian philology'){
-                let newElement = document.createElement('li');
-                let element = document.getElementById('University');
-                $(newElement).text('Daugavpils university');
-                element.appendChild(newElement);
-            }else{
-                if(prof == 'Physics'){
-                    let newElement = document.createElement('li');
-                    let element = document.getElementById('University');
-                    $(newElement).text('Daugavpils university');
-                    element.appendChild(newElement);
-                }else{
-                    if(prof == 'Enviromental Sciences'){
-                        let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Daugavpils university');
-                        element.appendChild(newElement);
-                    }else{
-                        if(prof == 'Economics'){
-                            let newElement = document.createElement('li');
-                            let element = document.getElementById('University');
-                            $(newElement).text('Daugavpils university');
-                            element.appendChild(newElement);
-                        }else{
-                            if(prof == 'Methematics'){
-                                let newElement = document.createElement('li');
-                                let element = document.getElementById('University');
-                                $(newElement).text('Daugavpils university');
-                                element.appendChild(newElement);
-                            }else{
-                                if(prof == 'History'){
-                                    let newElement = document.createElement('li');
-                                    let element = document.getElementById('University');
-                                    $(newElement).text('Daugavpils university');
-                                    element.appendChild(newElement);
-                                }else{
-                                    let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Dont found university');
-                        element.appendChild(newElement);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }else{
+    
         if(city == 'Riga'){
             if(prof == 'Innovative economy and business'){
                 let newElement = document.createElement('li');
@@ -420,161 +393,37 @@ $(".x-drop-down__value").click(function(event) {
             
         }else{
             if(city == 'Jelgava'){
-                if(prof == 'Economics'){
+                let newElement = document.createElement('li');
+                let element = document.getElementById('University');
+                $(newElement).text('Latvian agricultural university');
+                element.appendChild(newElement);
+                }
+            else{
+                if(city == 'Rezekne'){
                     let newElement = document.createElement('li');
                     let element = document.getElementById('University');
-                    $(newElement).text('Latvian agricultural university');
+                    $(newElement).text('Rezekne academy of technologies');
                     element.appendChild(newElement);
-                }else{
-                    if(prof == 'Informatics'){
-                        let newElement = document.createElement('li');
-                    let element = document.getElementById('University');
-                    $(newElement).text('Latvian agricultural university');
-                    element.appendChild(newElement);
-                    }else{
-                        if(prof == 'Veterinary Medicine'){
-                            let newElement = document.createElement('li');
-                    let element = document.getElementById('University');
-                    $(newElement).text('Latvian agricultural university');
-                    element.appendChild(newElement);
-                        }else{
-                            if(prof == 'Landscape architecture'){
-                                let newElement = document.createElement('li');
-                    let element = document.getElementById('University');
-                    $(newElement).text('Latvian agricultural university');
-                    element.appendChild(newElement);
-                            }else{
-                                if(prof == 'Forestry'){
-                                    let newElement = document.createElement('li');
-                    let element = document.getElementById('University');
-                    $(newElement).text('Latvian agricultural university');
-                    element.appendChild(newElement);
-                                }else{
-                                    if(prof == 'Business Management'){
-                                        let newElement = document.createElement('li');
-                    let element = document.getElementById('University');
-                    $(newElement).text('Latvian agricultural university');
-                    element.appendChild(newElement);
-                                    }else{
-                                        if(prof == 'Pedagogy'){
-                                            let newElement = document.createElement('li');
-                    let element = document.getElementById('University');
-                    $(newElement).text('Latvian agricultural university');
-                    element.appendChild(newElement);
-                                        }else{
-                                            let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Dont found university');
-                        element.appendChild(newElement);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }else{
-                if(city == 'Rezekne'){
-                    if(prof == 'Mechatronics'){
-                        let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Rezekne academy of technologies');
-                        element.appendChild(newElement);
-                    }else{
-                        if(prof == 'E-commerce'){
-                            let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Rezekne academy of technologies');
-                        element.appendChild(newElement);
-                        }else{
-                            if(prof == 'Programming'){
-                                let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Rezekne academy of technologies');
-                        element.appendChild(newElement);
-                            }else{
-                                if(prof == 'Interior design'){
-                                    let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Rezekne academy of technologies');
-                        element.appendChild(newElement);
-                                }else{
-                                    if(prof == 'financial management'){
-                                        let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Rezekne academy of technologies');
-                        element.appendChild(newElement);
-                                    }else{
-                                        if(prof == 'Philology'){
-                                            let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Rezekne academy of technologies');
-                        element.appendChild(newElement);
-                                        }else{
-                                            let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Dont found university');
-                        element.appendChild(newElement);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+                
                 }else{
                     if(city == 'Ventspils'){
-                        if(prof == 'Language and intercultural communcation'){
+                        let newElement = document.createElement('li');
+                let element = document.getElementById('University');
+                $(newElement).text('Ventspils university ');
+                element.appendChild(newElement);
+                    }else{
+                        if(city == 'Daugavpils'){
                             let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Ventspils university');
-                        element.appendChild(newElement);
-                        }else{
-                            if(prof == 'Translation studies'){
-                                let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Ventspils university');
-                        element.appendChild(newElement);    
-                            }else{
-                                if(prof == 'Business administration'){
-                                    let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Ventspils university');
-                        element.appendChild(newElement);
-                                }else{
-                                    if(prof == 'Information technology'){
-                                        let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Ventspils university');
-                        element.appendChild(newElement);
-                                    }else{
-                                        if(prof == 'Electronics'){
-                                            let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Ventspils university');
-                        element.appendChild(newElement);
-                                        }else{
-                                            if(prof == 'International business and export management'){
-                                                let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Ventspils university');
-                        element.appendChild(newElement);
-                                            }else{
-                                                let newElement = document.createElement('li');
-                        let element = document.getElementById('University');
-                        $(newElement).text('Dont found university');
-                        element.appendChild(newElement);
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                let element = document.getElementById('University');
+                $(newElement).text('Daugavpils university');
+                element.appendChild(newElement);
                         }
                     }
                 }
             }
         }
     }
-});
+);
   
 
 
