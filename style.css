@@ -231,7 +231,7 @@ figure {
     display: block;
 
   width: 100%;
-  height: 120%;
+  height: 150%;
 }
 
 .js-dropdown {
@@ -251,5 +251,10 @@ figure {
   
   .item_hide {
     display: none;
+  }
+  .text-js{
+    display: block;
+    font-size: 14px;
+    width: 100%;
   }
 
