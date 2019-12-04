@@ -106,10 +106,10 @@ $(".x-drop-down__value").click(function(event) {
       $("#polzunok").slider({
         animate: "slow",
         range: true, 
-        max: 100000,   
-        values: [ 0, 65000 ],
+        max: 15000,   
+        values: [ 0, 7500 ],
         slide : function(event, ui) {    
-            $("#result-polzunok").text( "от " + ui.values[ 0 ] + " до " + ui.values[ 1 ] );        
+            $("#result-polzunok").text( "from " + ui.values[ 0 ] + " to " + ui.values[ 1 ] );        
         }
     });
     $( "#result-polzunok" ).text("from " + $("#polzunok").slider("values", 0) + " to " + $("#polzunok").slider("values", 1));
