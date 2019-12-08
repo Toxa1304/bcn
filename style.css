@@ -6,6 +6,21 @@ html,body {
     font-family: 'Popins', sans-serif;
     color: #222
 }
+.lang_en,
+.lang_de,
+.lang_fr {
+  width: 22px;
+  height: 16px;
+}
+
+.lang_fr {
+  background: url(/Images/letonia.png);
+}
+.lang_en:hover,
+.lang_de:hover,
+.lang_fr:hover {
+  background-position: 0 -16px;
+}
 
 .navbar {
     padding: .8rem;
@@ -16,9 +31,9 @@ html,body {
 }
 
 .nav-link {
-    font-size: 1.1em !important;
+    font-size: 1.1em ;
     padding-left: 210px;
-    color: white;
+   
 }
 
 
@@ -55,8 +70,8 @@ html,body {
 }
 
 .btn-primary {
-    background-color: #2a4b90;
-    border: 1px solid #2a4b90;
+    background-color: #6648b1;
+    border: 1px solid #6648b1;
 }
 
 .btn-primary:hover {
@@ -216,6 +231,7 @@ figure {
     max-width: 100%;
     height: 100%
 }
+
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -258,6 +274,4 @@ figure {
     font-size: 14px;
     width: 100%;
   }
-  .numberrr{
-      color: blue;
-  }
+

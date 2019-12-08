@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153985805-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-153985805-1');
-    </script>
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Career Navigator</title>
@@ -20,29 +10,46 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="style.css" rel="stylesheet">
-    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Плавный скролл по якорям
+            $('a[href^="#"]').click(function () { 
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                if($.browser.safari){
+                $('body').animate( { scrollTop: destination }, 1000 );
+                } else {
+                    $('html').animate( { scrollTop: destination }, 1000 );
+                }
+                return false;
+           });
+        });
+    </script>
 </head>
 <body>
-<style>
-    a:hover{
-        color: yellow;
-    }
-</style>
+
+<div id="google_translate_element" style="background-color: #2c4281; padding-left: 1070px;"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top">
-<div class="container-fluid">
+<div class="container-fluid" id = "#menu">
     <a class="navbar-brand" href="index.html"><img src="Images/mobile_logo.png"></a>
-        
+        <a class="nav-link active search" href="search.html" style="color: white;">Navigator</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link active search" href="search.html" style="color: white;">Navigator</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="universities.html" style="color: white;">Higher Education Institutions</a>
+                <a class="nav-link active" href="universities.html" style="color: white;">Universities</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#aboutus" style="color: white;">About us</a>
@@ -51,7 +58,8 @@
                 <a class="nav-link" href="#contact" style="color: white;">Contact us</a>
             </li>
         </ul>
-    </div>    
+
+
 </div>
 </nav>
 
@@ -103,12 +111,12 @@
 </div>-->
 
 <div class="img-fluid">
-    <img src="Images/output-onlinepngtools.png" class="img-fluid" alt="Responsive image">
+    <img  src="Images/output-onlinepngtools.png" class="img-fluid" alt="Responsive image">
     <div class="carousel-caption">
         <img src="Images/oie_3BsKYwKNw5GS.png" class="img-fluid">
         <h1 class="display-2">Discover your future</h1>
         
-        <a href="search.html"<button type="button" href="universities" class="btn btn-primary btn-lg" style = "color: white;">NAVIGATOR</a>
+        <a href="search.html"<button type="button" href="universities" class="btn btn-primary btn-lg" style = "color: black;">NAVIGATOR</a>
         </button>
     </div>
 </div>
@@ -120,7 +128,7 @@
 
 <!--- Two Column Section -->
 <div>
-    <a name="aboutus"/>
+    <div id="aboutus" name="aboutus">
 <div class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
@@ -148,6 +156,7 @@
             </div>
         </div>    
 </div>
+</div>
 <hr>
 
 <div class="container-fluid padding">
@@ -159,7 +168,7 @@
         <div class="col-md-12 col-lg-8">
             <h2>Description of the platform</h2>
             <p>
-                Bauska Career Navigator is a matching platform, the aim of which is to assist the pupils with a successful career choice. We present pupils with information 
+                Bauska Career Navigator is a matching platform, the aim of which is to assist the pupils of Bauska with a successful career choice. We present pupils with information 
                 on Higher education Institutions accredited in Latvia and make it easy to compare to other institutions for a wide range of indicators verified by the educational 
                 organizations themselves. Our accessible platform will help students to decide on better educational and professional choices. 
             </p>
@@ -250,7 +259,7 @@
 </div>
 <hr>
 <div>
-    <a name="contact"/>
+    <div id="contact" name="contact">
 <div class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
@@ -260,29 +269,25 @@
             
         </div>    
 </div>
-
 <div class="container-fluid padding">
         <div class="row padding">
             <div class="col-md-12 col-lg-8">
-
-                <h2>Career Navigator in Bauska phone number:</h2>
-                <u><i> <span class= "numberrr"><h2>+371 28781611</h2></span></i></u>
-
-                <h2>Our social media:</h2>
-                
+                <h2>Relevance</h2>
+                <p>
+                    In the 21st century deciding on a career path from the myriad of opportunities and dedicating oneself to grueling years of study has become ever more 
+                    critical in the lives of young people. Based on our observations, people keep on choosing fields foreign to them based on the pressure coming from family 
+                    friends or perhaps society or culture as a whole. Our platform proposes an entirely new take on deciding one's career path.  Our team understands the process
+                     of making better career decisions those decisions based on a carefully planned course of action along with the involvement of human factors, and our platform 
+                     does both with the intended result would be described as pupils that won't deviate from the intended field. 
+                </p>
                 </br>
-                <div class="col-6 social padding">
-                        <a href="https://www.instagram.com/bauskacareer/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/bauskacareernavigator/?modal=admin_todo_tour"><i class="fab fa-facebook"></i></a>
-                        
-                    </div>
             </div>
             <div class="col-lg-4">
                 <img src="Images/people_2.png" class="img-fluid">
             </div>
         </div>    
 </div>
-
+</div>
 
 
 
@@ -306,6 +311,17 @@
 
 
 <!--- Footer -->
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+
 <footer>
         <div class="container-fluid padding" id="end1">
         <div class="row text-center">
