@@ -134,7 +134,7 @@ $(".x-drop-down__value").click(function(event) {
     }
     
         if(city == 'Riga'){
-            if(prof == 'Innovative economy and business'){
+            if(prof == 'Žurnālisms un masu mēdiji'){
                                     let newElement = document.createElement('li');
                                     let element = document.getElementById('University'); 
                                     let spanInfo = document.createElement('span');
@@ -152,11 +152,11 @@ $(".x-drop-down__value").click(function(event) {
                                     $(spanUni).css('margin-top','50px');
                                     $(spanUni3).css('display', 'block');
                                     $(spanUni3).css('margin-top','50px');
-                                    $(spanInfo).text('University of economics and culture (EKA)');
-                                    $(spanUni3).text('Direction: Innovative economy and business');
-                                    $(spanUni2).text('Form of study: Full-time, Distance');
-                                    $(spanUni1).text('Tuition: 1950 EUR');
-                                    $(spanUni).text('ERASMUS: The mobility program provides for the training of students in higher educational institutions of other countries lasting from 3 months to one year. The purpose of this program is to improve students education and develop experience in studying abroad.');
+                                    $(spanInfo).text('Biznesa augstskola “Turība”');
+                                    $(spanUni3).text('Jomas: Žurnālisms un masu mēdiji');
+                                    $(spanUni2).text('Mācību veids: Pilna laika');
+                                    $(spanUni1).text('Studiju maksa: 3000 EUR');
+                                    $(spanUni).text('ERASMUS: mobilitātes programma paredz studijas citu Eiropas Savienības valstu augstskolās laika posmā no 3 mēnešiem līdz vienam gadam. Izmantojot ERASMUS+ studentu mobilitātes programmu, studentiem ir iespēja paplašināt redzesloku un dažādot zināšanas savā nozarē. Pieteikties var studenti, kuri vai nu nav līdz šim piedalījušies ERASMUS programmā vai ir piedalījušies ERASMUS mobilitātes programmā, bet kopējais dalības periods nepārsniedz 12 mēnešus (ieskaitot to, kurā students plāno doties), un, kuri ir pabeiguši vismaz vienu studiju gadu Biznesa augstskolā Turība. Kandidātu atlasē primāri tiek vērtētas studentu sekmes un svešvalodu zināšanas, kā arī studentu motivācija. Dubultā grāda studiju programmas ļauj kādu laiku studēt Biznesa augstskolā "Turība" un kādā no partneru augstskolām ārzemēs, lai saņemt grādu abās.');
                                     newElement.appendChild(spanInfo);
                                     newElement.appendChild(spanUni3);
                                     newElement.appendChild(spanUni2);
